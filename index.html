@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript_Math</title>
+</head>
+<script src="script.js"></script>
+
+<body>
+
+
+    <!--------------------------------- roundup --------------------------------------->
+    <div class="significant_figure">
+        <h1 class="h1"><em>significant figure calculater</em></h1>
+        <input type="text" id="value" placeholder="value">
+
+        <button type="submit" onclick="myfunction()"><b>round</b></button>
+
+    </div>
+
+
+
+
+
+
+    <style>
+        input {
+
+            margin-left: 40px;
+            padding: 4px 7px;
+            margin-right: 40px;
+            height: 40px;
+            font-size: 35px;
+            width: 400px;
+
+        }
+
+        .h1 {
+            font-size: 40px;
+            text-align: center;
+       
+        }
+
+        .significant_figure {
+            height: 450px;   background: url(img/pi2.jpg);
+            background-size: cover;
+            width: 500px;
+            margin-top: 50px;
+         
+            margin-left: 400px;
+            border-radius: 40px;
+
+            border: 2px ridge gray;
+
+        }
+
+        .significant_figure:hover {
+         
+            box-shadow: 2px 2px 2px 5px rgb(189, 175, 175);
+            margin-top: 50px;
+            margin-left: 400px;
+            border: 2px ridge gray;
+        }
+
+
+
+        button {
+            height: 50px;
+            width: 90px;
+       outline: none;
+
+            font-size: 25px;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 370px;
+        }
+    </style>
+
+</body>
+
+
+<script>
+    function myfunction() {
+
+        let inputround = document.getElementById("value").value;
+        let rounded = Number(inputround);
+        let result = Math.round(rounded);
+        let input = document.getElementById("value").value = result;
+        console.log(input);
+
+    }
+
+</script>
+
+</html>
